@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1 {
+    margin: 6rem 0;
+}
+
+.visual > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    z-index: -1;
+}
+.pads {
+    display: flex;
+    width: 100%;
+}
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.pad1 {
+    background: #ffbe0b;
+}
+.pad2 {
+    background: #fb5607;
+}
+.pad3 {
+    background: #ff006e;
+}
+.pad4 {
+    background: #8338ec;
+}
+.pad5 {
+    background: #3a86ff;
+}
+.pad6 {
+    background: #5e6472;
+}
+@keyframes jump {
+    0% {
+        bottom: 0;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    0% {
+        bottom: 0;
+        left: 80%;
+    }
+}
